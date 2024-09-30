@@ -1,0 +1,27 @@
+package ru.vladislav.gof.examples.gof_patterns_examples.topic_1_creative_patterns.n4_builder.builder.common.components;
+
+/**
+ * Одна из фишек автомобиля.
+ */
+public class GPSNavigator {
+    private String route;
+
+    public GPSNavigator() {
+        this.route = "221b, Baker Street, London  to Scotland Yard, 8-10 Broadway, London";
+    }
+
+    public GPSNavigator(String manualRoute) {
+        this.route = manualRoute;
+    }
+
+    public String getRoute() {
+        return route;
+    }
+
+    @Override
+    public String toString() {
+        return "GPSNavigator{" +
+                "route='" + route + '\'' +
+                '}';
+    }
+}
